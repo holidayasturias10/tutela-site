@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutela Biotech — Shanghai</title>
+<meta name="description" content="Tutela Biotech is an early-stage cell therapy company based in Shanghai, developing off-the-shelf regulatory T-cell medicines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,300;7..72,400;7..72,600&family=IBM+Plex+Sans:wght@300;400;500&family=Noto+Serif+SC:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14181b;
+  --slate:#4a5459;
+  --paper:#f2f3f0;
+  --jade:#2e6f5e;
+  --pale:#c9d8d1;
+  --rule:#d5d8d2;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-weight:300;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+
+/* ---------- hero ---------- */
+header{padding:96px 0 0}
+.lockup{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap}
+.mark{
+  font-family:Literata,Georgia,serif;
+  font-weight:300;
+  font-size:clamp(44px,7vw,84px);
+  letter-spacing:-.02em;
+  line-height:1;
+  margin:0;
+}
+.mark em{font-style:normal;color:var(--jade)}
+.zh{
+  font-family:"Noto Serif SC",serif;
+  font-size:clamp(15px,1.6vw,19px);
+  color:var(--slate);
+  letter-spacing:.08em;
+}
+.statement{
+  font-family:Literata,Georgia,serif;
+  font-weight:300;
+  font-size:clamp(22px,2.8vw,34px);
+  line-height:1.4;
+  letter-spacing:-.01em;
+  max-width:19em;
+  margin:56px 0 0;
+}
+.locus{
+  margin:40px 0 0;
+  padding-top:22px;
+  border-top:1px solid var(--rule);
+  display:flex;
+  gap:36px;
+  flex-wrap:wrap;
+  font-size:14.5px;
+  color:var(--slate);
+  letter-spacing:.02em;
+}
+.locus span{display:block}
+.locus b{display:block;font-weight:500;color:var(--ink);font-size:14.5px}
+
+/* ---------- body sections ---------- */
+main{padding:104px 0 0}
+section{
+  display:grid;
+  grid-template-columns:minmax(0,15em) minmax(0,1fr);
+  gap:48px;
+  padding:0 0 72px;
+}
+section + section{border-top:1px solid var(--rule);padding-top:72px}
+h2{
+  font-family:Literata,Georgia,serif;
+  font-weight:400;
+  font-size:20px;
+  line-height:1.35;
+  margin:0;
+  letter-spacing:-.005em;
+}
+.prose{max-width:34em}
+.prose p{margin:0 0 1.15em}
+.prose p:last-child{margin-bottom:0}
+.prose strong{font-weight:500}
+
+/* pipeline list — not cards */
+.areas{margin:0;padding:0;list-style:none;max-width:34em}
+.areas li{
+  padding:18px 0;
+  border-bottom:1px solid var(--rule);
+  display:grid;
+  grid-template-columns:minmax(0,11em) minmax(0,1fr);
+  gap:24px;
+  align-items:baseline;
+}
+.areas li:first-child{padding-top:0}
+.areas li:last-child{border-bottom:0;padding-bottom:0}
+.areas dt,.areas .term{
+  font-weight:500;
+  font-size:15.5px;
+  color:var(--jade);
+  letter-spacing:.01em;
+}
+.areas .desc{font-size:16px;color:var(--slate);line-height:1.55}
+
+/* ---------- contact ---------- */
+footer{
+  margin-top:24px;
+  border-top:1px solid var(--rule);
+  padding:64px 0 88px;
+}
+.foot-grid{
+  display:grid;
+  grid-template-columns:minmax(0,15em) minmax(0,1fr);
+  gap:48px;
+}
+a{color:var(--jade);text-decoration:none;border-bottom:1px solid var(--pale);padding-bottom:1px}
+a:hover{border-bottom-color:var(--jade)}
+a:focus-visible{outline:2px solid var(--jade);outline-offset:3px;border-radius:2px}
+.legal{
+  margin-top:56px;
+  font-size:13px;
+  color:#7c858a;
+  line-height:1.6;
+  max-width:44em;
+}
+
+@media (max-width:760px){
+  header{padding-top:56px}
+  main{padding-top:64px}
+  section,.foot-grid{grid-template-columns:1fr;gap:20px}
+  section{padding-bottom:52px}
+  section + section{padding-top:52px}
+  .areas li{grid-template-columns:1fr;gap:4px}
+  .wrap{padding:0 22px}
+  .statement{margin-top:40px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .mark,.statement{animation:rise .7s cubic-bezier(.2,.6,.2,1) both}
+  .statement{animation-delay:.12s}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="lockup">
+      <h1 class="mark">Tutela <em>Biotech</em></h1>
+      <span class="zh">上海育安生物科技有限公司</span>
+    </div>
+
+    <p class="statement">We are building cell therapies that teach the immune system to stand down.</p>
+
+    <div class="locus">
+      <span><b>Shanghai</b>Pudong</span>
+      <span><b>Founded</b>2026</span>
+      <span><b>Stage</b>Pre-clinical</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>What we are doing</h2>
+    <div class="prose">
+      <p>Most serious immune disease is a problem of control rather than strength. The immune system attacks a transplanted organ, a donor graft, or the body itself, and the standard answer is to suppress it broadly — for years, at real cost to the patient.</p>
+      <p>Tutela is developing a different approach: cell therapies built from regulatory T cells, the population whose natural job is to hold immune responses in check. Our platform produces them from banked material rather than from each individual patient, which is what makes a therapy rather than a bespoke procedure.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Where we are aiming</h2>
+    <div class="prose">
+      <ul class="areas">
+        <li><span class="term">Transplantation</span><span class="desc">Reducing the lifelong immunosuppression that follows solid-organ transplant.</span></li>
+        <li><span class="term">Graft-versus-host disease</span><span class="desc">Preventing and treating GvHD in patients receiving stem-cell transplants.</span></li>
+        <li><span class="term">Oncology</span><span class="desc">Earlier-stage work applying engineered cells to tumours that current therapies reach poorly.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Shanghai</h2>
+    <div class="prose">
+      <p>China performs the second-largest number of transplants in the world and a substantial share of global stem-cell transplants, with clinical need concentrated in exactly the settings our work addresses.</p>
+      <p>The company is registered in the Pudong free trade zone, within the Zhangjiang life science cluster, and works alongside Chinese academic and clinical partners.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Who we are</h2>
+    <div class="prose">
+      <p>A small founding team of scientists and operators, with an academic institutional partner and clinical collaborators in Shanghai. We are in the pre-clinical stage and not yet recruiting broadly.</p>
+      <p>We speak with investors, potential partners and prospective collaborators on request.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <h2>Contact</h2>
+      <div class="prose">
+        <p><a href="mailto:info@tutelabio.com">info@tutelabio.com</a></p>
+        <p>Shanghai, China</p>
+      </div>
+    </div>
+    <p class="legal">Tutela Biotech is an early-stage company. Nothing on this site is an offer of securities, a description of an approved medicine, or medical advice. No product described here has been approved by any regulatory authority.</p>
+  </div>
+</footer>
+
+</body>
+</html>
